@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 0 20px 0;
+    background:linear-gradient(rgb(56, 173, 56), rgb(101, 101, 227));
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        background: black;
+    }
+    body {
+      background-color: lightblue;
+    }
+  }
+
+h1{
+    color: #ffffff;
+}
+
+main {
+    width: 60%; /* set the width to around 60% to get a "fluid"/responsive design */
+    margin: auto;
+    text-align: center;
+}
+
+section {
+    border: 1px solid black; /* using borders helps visualize the way content is behaving, you can use them in the design process and take them out later */
+    overflow: auto; /*  "clearfix solution" you can play with this to see what you like  */
+    
+}
+
+.float-left {
+    float: left; /* when you float an element, you generally need to "clear" the following element to tell it how to behave next to the floated element  */
+    margin: 0 5px 5px 0;
+    width: 50%;
+    height: auto;
+    
+}
+
+
+#gallery{
+    clear: both;  "both" means that this element will not display to the left or right side of the floated element, which pushes it below */
+    text-align: center;
+    border: 1px solid black;
+
+}
+.clear{
+    clear: none;
+}
+
+.gallery-item {
+    display:inline-block; /* items can be displayed horizontally with a set width/height and margins/padding */
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px; 
+}
+
+footer {
+    background:linear-gradient(rgb(56, 173, 56), rgb(101, 101, 227));
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
