@@ -64,7 +64,7 @@ nav {
 .project_item {
     display: grid;  /* we have a grid inside a grid here, with each item as its own grid*/
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr 2fr;
     grid-template-areas:
     "image number"
     "image title"
